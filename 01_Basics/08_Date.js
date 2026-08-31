@@ -24,7 +24,7 @@ console.log(myCreatedDate.toLocaleString());
 let timeStamp = Date.now();
 console.log(timeStamp);
 
-console.log(myCreatedDate.getDate(), getTime());
+console.log(myCreatedDate.getDate());
 
 
 

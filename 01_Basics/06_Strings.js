@@ -49,7 +49,7 @@ console.log(url.includes('ujjwal')) //returns true
 console.log(url.includes('King')); //returns false
 
 const gamerName = "ujjwal-raj-com"
-console.log(gamerName.split("-"));
+console.log(gamerName.split("-")); //splits a string into an array wherever it finds a hyphen (-). In your code. better to check it in a browser
 
 
 
