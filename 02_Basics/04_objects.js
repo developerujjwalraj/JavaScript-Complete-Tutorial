@@ -65,6 +65,30 @@ console.log(Object.entries(tinderuser)); //returns keys and values both in array
 
 console.log(tinderuser.hasOwnProperty('isLoggedIn')); //checks if there is any property with the given name in the object and returns value in boolean form.
 
+//we can check other prototypes of object by pasting it on browser and then running it. It will show a list of different
+
+
+const course = {
+    courseName : "Javascript tutorial",
+    coursePrice : 999,
+    courseInstructor : "Chai aur code",
+};
+
+//we can access the properties in three ways. First two we know about dot notation and bracket notation
+
+console.log(course.courseInstructor); //Chai aur code
+console.log(course["courseInstructor"]); //Chai aur code
+
+//but there is one more method by which we can access the properties directly without writing the object name first
+
+const {courseInstructor} = course;//We can access this way too
+
+const {courseInstructor : CI} = course; // If we want to rename the property then we can write it like this
+
+
+console.log(courseInstructor); 
+
+
 
 
 
