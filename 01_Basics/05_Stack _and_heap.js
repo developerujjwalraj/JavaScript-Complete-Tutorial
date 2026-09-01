@@ -2,21 +2,21 @@
 
 //Heap (non - primitives) such as Array, objects and functions. Heap memory saves the reference of the value stored.
 
-let user = "Ujjwal Raj"
-let email = "ujjwalraj234dz@gmail.com";
+let user = "abc Raj"
+let email = "abc@gmail.com";
 
 let user2 = user
 
 user = "Ramesh";
 
 console.log(user);//Ramesh
-console.log(user2); //Ujjwal Raj because value change does not affect if we already assigned the value earlier.
+console.log(user2); //abc Raj because value change does not affect if we already assigned the value earlier.
 
 //but if we move to heap memory
 
 let userOne ={
-    userName : "ujjwalraj234dz",
-    upiId : "ujjwal@paytm",
+    userName : "abc",
+    upiId : "abc@paytm",
 };
 let userTwo = userOne;
 

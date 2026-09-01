@@ -28,7 +28,7 @@ console.log(id === anotherId); //false because Symbol('123') creates a new uniqu
 
 const heroes = ["shaktimaan", "hero", "Spiderman"];
 let myObj = {
-    Name : "Ujjwal Raj",
+    Name : "abc Raj",
     Age : 22,
 };
 console.log(myObj)

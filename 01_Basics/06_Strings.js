@@ -1,11 +1,11 @@
-const name = "Ujjwal";
+const name = "abc";
 const repoCount = 50;
 
 // console.log(name + repoCount + "value") //not the correct way
 
 console.log(`Hello, My name is ${name}, and my repo count is ${repoCount}`);
 
-const gameName = new String("Ujjwalur") //another way to declare a string. try it in a browser console
+const gameName = new String("abc") //another way to declare a string. try it in a browser console
 
 console.log(gameName[0]); //uoutput is "U" because U is on the 0th index of the string
 
@@ -35,20 +35,20 @@ console.log(thirdString);
 
 
 
-const lastOneString = "        UjjwalRaj        ";
+const lastOneString = "        abcRaj        ";
 console.log(lastOneString); //it will leave spaces as declared in the value
 
 //but
 console.log(lastOneString.trim()); //it will trim spaces before and after character starts and ends respectively
 
-const url = "www.ujjwalraj.com";
+const url = "www.abcraj.com";
 console.log(url.replace("raj", "raaja")); //replaces the current value with the given value
 
 
-console.log(url.includes('ujjwal')) //returns true
+console.log(url.includes('abc')) //returns true
 console.log(url.includes('King')); //returns false
 
-const gamerName = "ujjwal-raj-com"
+const gamerName = "abc-raj-com"
 console.log(gamerName.split("-")); //splits a string into an array wherever it finds a hyphen (-). In your code. better to check it in a browser
 
 

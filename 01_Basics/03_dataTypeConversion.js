@@ -1,4 +1,4 @@
-let score = "Ujjwal";
+let score = "abc";
 
 console.log(typeof score); //string
 console.log(typeof(score)); //string and it is same as above statement
@@ -18,7 +18,7 @@ console.log(typeof valueOfScoreInNumber); //number
 //"33an" cannot be converted to a number because it is not a number (NaN)
 //true = 1; false = 0;
 
-let isLoggedIn = "Ujjwal";
+let isLoggedIn = "abc";
 
 let booleanConvert = Boolean(isLoggedIn);
 console.log(booleanConvert); //true because there is some value in isLoggedIn variable but if we put no value in therer it will print false
@@ -47,11 +47,11 @@ console.log(2/2); //1 division
 console.log(13%2); //1 modulus
 console.log(8**2); //64 exponent
 
-let str1 = "Ujjwal";
+let str1 = "abc";
 let str2 = "hello";
 
 let str3 = str1+str2;
-console.log(str3); //Ujjwalhello because it concatenates the string
+console.log(str3); //abchello because it concatenates the string
 
 console.log("1" + 2); //12
 //but 

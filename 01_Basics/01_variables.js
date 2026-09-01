@@ -1,5 +1,5 @@
 const accountId = 46464;
-let accountEmail = "ujjwal@gmail.com";
+let accountEmail = "abc@gmail.com";
 var accountPassword = "12345";
 accountCity = "Jaipur"; // JS is smart and it defauts a variab;e datatype to it if anywhere it is not declared
 let accountState;

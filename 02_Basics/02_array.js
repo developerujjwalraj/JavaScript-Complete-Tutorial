@@ -21,11 +21,11 @@ const anotherArray = [1,2,3 ,[4,5,6],4,3,[5,6,[7,[8],9],10]];
 const finalOneArray = anotherArray.flat(Infinity); //returns a new array out of nested arrays and the new array is without any nested array
 console.log(finalOneArray);
 
-console.log(Array.isArray("Ujjwal"));
-console.log(Array.from("Ujjwal"));
-console.log(Array.from( {name : "Ujjwal Raj"})); //returns empty array 
+console.log(Array.isArray("abc"));
+console.log(Array.from("abc"));
+console.log(Array.from( {name : "abc Raj"})); //returns empty array 
 
-console.log(Array.from(Object.values({name: "Ujjwal Raj"}))); //You can use this to return an object in form of an array
+console.log(Array.from(Object.values({name: "abc Raj"}))); //You can use this to return an object in form of an array
 
 let score1 = 100;
 let score2 = 200;

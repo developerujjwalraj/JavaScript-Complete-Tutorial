@@ -13,7 +13,7 @@ const regularUser = { //this is a nested object
     email : "abc@gmail.com",
     fullname : {
         userFullName : {
-            firstName : "Ujjwal",
+            firstName : "abc",
             lastName : "Raj",
         },
     },

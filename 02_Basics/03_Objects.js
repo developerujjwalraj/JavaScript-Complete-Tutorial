@@ -8,12 +8,12 @@ const mySym = Symbol("key1")
 
 
 const jsUser = {
-    Name : "Ujjwal",
-    "full name" : "Ujjwal Raj",
+    Name : "abc",
+    "full name" : "abc Raj",
     [mySym] : "myKey1",
     Age : 18,
     Location : "Patna",
-    email : "ujjwalraj234dz@gmail.com",
+    email : "abc@gmail.com",
     isLoggedIn : false,
     lastLoginDays : ["Monday", "Saturday"],
 
@@ -27,7 +27,7 @@ const jsUser = {
 // console.log(jsUser[mySym]);
 
 
-// jsUser.email = "ujjwalraj234dz@chatgpt.com";
+// jsUser.email = "abc@chatgpt.com";
 // console.log(jsUser['email']);
 
 // Object.freeze(jsUser); // it freezes the contents of an object. It cannot be changed further

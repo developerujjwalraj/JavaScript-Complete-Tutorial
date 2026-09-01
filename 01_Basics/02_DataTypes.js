@@ -3,10 +3,10 @@
 // alert(3+3); //This is a correct statement but since we are running JS on console or IDE instead of browser so the alert command will not work.
 
 console.log(3+3);
-console.log("Ujjwal");
+console.log("abc");
 
 
-let name = "Ujjwal";
+let name = "abc";
 let age = 22;
 let isLoggedIn = false;
 let state;
