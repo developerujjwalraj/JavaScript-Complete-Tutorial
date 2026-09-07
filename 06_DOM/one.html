@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class="heading">DOM learing JS tutorial <span style="display: none;">testinggg</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li>One</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+
+
+<!-- document.getElementById('title').id //gives id of the element
+'title'
+document.getElementById('title').class //returns undefined because it should be className
+undefined
+document.getElementById('title').className //gives class of the element
+'heading'
+document.getElementById('title').getAttribute('id') //gives id of the element
+'title'
+document.getElementById('title').getAttribute('class') //gives class of the element
+'heading'
+document.getElementById('title').setAttribute('class', 'hello') //sets class of the element by overriding the previous class
+undefined
+document.getElementById('title').setAttribute('class', 'hello heading') //sets class of the element without overriding the previous class
+undefined -->
+
+<!-- title.style.backgroundColor ='green' //sets background color of the element
+'green'
+title.style.padding = '15px' //sets padding of the element
+'15px'
+title.style.borderRadius = '20px' //sets border radius of the element
+ -->
+
+<!-- title.innerText  //gives only visible contents associated with the id/class
+'DOM learing JS tutorial'
+title.textContent    //gives visible as well as hidden contents associated with the id/class
+'DOM learing JS tutorial testinggg' 
+title.innerHTML //gives tags or attributes also which are inside the element
+'DOM learing JS tutorial <span style="display: none;">testinggg</span>'-->
+
+<!-- document.querySelector('input[type = "password"]')
+<input type=​"password" name id>​ -->
+
+
+<!-- document.querySelector('ul')
+<ul>​…​</ul>​
+const myUl = document.querySelector('ul')
+undefined
+myUl.querySelector('li')
+<li>​…​</li>​
+const turnGreen = myUl.querySelector('li')
+undefined
+
+turnGreen.style.backgroundColor = 'green'
+'green'
+turnGreen.style.padding = '10px'
+'10px'
+turnGreen.style.borderRadius = '20px'
+'20px'
+turnGreen.innerText = 'five'
+'five' -->
+
+<!-- const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(3)
+tempLiList[1].style.backgroundColor = 'red'
+'red'
+tempLiList[1].style.padding = '10px'
+'10px'
+
+tempLiList[1].style.borderRadius = '10px'
+'10px' -->
+
+
+<!-- const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(3) [li, li, li]
+const convertedArray = Array.from(tempLiList)
+undefined
+convertedArray
+(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: Array(0)
+convertedArray.for
+undefined
+convertedArray.forEach(function (li){
+    li.style.color = 'orange'
+})
+undefined -->
+</body>
+</html>
