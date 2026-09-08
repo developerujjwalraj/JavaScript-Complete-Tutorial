@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+
+   <script>
+        // document.getElementById('owl').onclick = function(){
+        //     alert('Owl clicked');
+        // } this approach is good but not feasible. better use event listeners where you can use propogation
+
+
+        //like addEventListener there are some other methods which were famous earlier
+        //attachEvent() - used during internet explorer days
+        //jQuery - on (this on was used during jQuery days)
+
+
+        //important topics to read: 
+        //type, timestamp, preventDefault()
+        //target, toElement, srcElement, currentTarget,
+        //clientX, clientY, screenX, screenY
+
+        // document.getElementById('owl').addEventListener('click', function(){
+        //     alert('owl clicked again');
+        // }, false); //this addEventListener is used nowadays frequently
+
+
+        // document.getElementById('owl').addEventListener('click', function(e){
+        //     console.log(e);
+        // }, false); // the e is the event object which contains details about the click event. the false is a default behaviour which tells that the eventListener is using the bubbling phase. while true says that the eventListener is using capturing phase
+
+        //example to check bubbling and capturing phase
+
+        // document.getElementById('images').addEventListener('click', function(e){
+        //     console.log('clicked inside the ul');
+        // }, false);
+
+        // // document.getElementById('owl').addEventListener('click', function(e){
+        // //     console.log('clicked owl');
+        // // }, true); //false shows that the event listener is in bubbling phase and it will go down to up means from owl id to images id. while true defines capturing phase and will show images id first and then owl id.
+
+        // document.getElementById('owl').addEventListener('click', function(e){
+        //     console.log('clicked owl');
+        //     e.stopPropagation(); //this is a JS event method which stops the event from bubbling up from the element where it happened to its parent element.            
+        // }, false); 
+
+        // document.getElementById('google').addEventListener('click', function(e){
+        //     console.log('google clicked');
+        //     e.preventDefault(); //stops the browser’s default action.
+        //     console.log(e.defaultPrevented);//returns true or false based on if default browser action is prevented or not
+        // });
+
+
+        //now we have to do a small task where we have to delete those images where our mouse will be clicked.
+
+        document.querySelector('#images').addEventListener('click', (e) => {
+            // console.log(e.target.parentNode);
+            if (e.target.tagName === 'IMG' ) {
+                console.log(e.target.id);
+                const removeIt = e.target.parentNode;
+                removeIt.remove(); //one way to do it
+            }
+            
+            
+            //e.target logs where the image is getting targeted/clicked.
+            //e.target.parentNode gives the parent node of the targeted/clicked image
+
+            
+
+            
+        }, false)
+
+
+        
+
+
+
+   </script>
+</body>
+</html>
